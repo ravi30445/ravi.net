@@ -120,7 +120,8 @@ methods
  access_modifier return_type name(){
     //method body
  } 
- if we don't add static keyword to the method then that method is a instance method and we have call it using instance of that class in which it is defined
+ if we don't add static keyword to the method then that method is a instance 
+ method and we have call it using instance of that class in which it is defined
 
  if the function is defined with static keyword like
  punlic static void fun(int num){
@@ -139,6 +140,63 @@ ref keyword is used to specify that the function is callled by reference
 ref keyword is also used with the function defintion
 
 output parameter  
+used
+when we want to have more then one return value 
+ we just have to add out keyword to the output parameter in the function def
+
+ public static void fun(int a,int b, out int c,out int d){
+    //method def
+ }
+
+parameter arrays
+here we use params keyword to pass array as parameter
+and when we pass some other parameter with the array we have to specify before array
+parameter means array parameter should be the last one
+public static void fun(int a,int b,params int[] arr){
+   //method def 
+}
+
+namespaces 
+used to organise the program
+and provide assistance in avoiding name clashes
+we can use the system designed namespaces as well as we can create one and use it same way
+creating namespace
+namespace project1{
+    namespace teamA{
+        class classA{
+            //variables
+            //methods
+        }
+    }
+}
+
+using project1.teamA
+or
+using a=project1.teamA//giving alias to namespace
+
+----------------------------------
+
+classes
+class is a blue print of an object that 
+consist of data and its behavior
+
+constructor
+
+it is a function with same name as class
+but does not have return type 
+it is used to initialise the object
+
+destructor
+
+it is also a function with same 
+name as class with a tild~ sign before the name
+it is used to destroy the objects
+
+object creation for class customer
+customer c1=new customer();
+
+static member allocates memory once for all the instance created
+
 
 
 
