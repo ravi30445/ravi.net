@@ -1,0 +1,82 @@
+API
+application programming interface is resposible
+for data transmission.
+it is also responsible for communication between two 
+application
+it act as  an intermediate between client and server
+and handles request and response 
+
+            application---------API server
+                |------request----->|
+                |<-----response-----|
+                |------request----->|
+                |<-----response-----|
+
+
+     eg
+                                  -Indigo
+                        API   -
+                    -
+           makeMyTrip-  API   -   -spice jet
+                    -
+                        API   -
+                                   -air india
+
+in above case there will be diffrent APIand makemytrip will be calling 
+diffrent API for the data
+
+How Http works 
+
+                   verb
+                  Headers
+                  content
+
+                  request
+      client--------------------server
+        |--------------------------|
+                  response
+
+                  status code
+                  header(content type)
+                  content
+
+the request object
+Verb:
+    GET- fetches or request resource
+    POST-creates or insert resource
+    PUT-updates or modifies resource
+    PATCH-update or modifies partail resource
+    DELETE-deletes or removes resource
+
+Header:
+    CONTENT TYPE-content format
+    CONTENT LENGTH-size of the content
+    AUTHORIZATION-checks who is making the request
+    ACCEPT-checks what are the accepted type
+
+Content:
+    REQUEST CONTENT
+
+The Response object
+Status code:
+    100-199:Informational
+    200-299:Success
+       -200:ok
+       -201-created
+       -204-no content
+    300-339:Redirection
+    400-499:client error
+       -400:Bad request
+       -404-Not found
+       -409-Conflict
+    500-599:Server error
+       -500-internal server error
+
+Header:
+    Response's Metadata
+        content type
+        content length
+        expires-when is this valid
+
+        
+

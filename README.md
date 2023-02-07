@@ -197,6 +197,63 @@ customer c1=new customer();
 
 static member allocates memory once for all the instance created
 
+lists 
+list is one of the generic collection class present in system.collection.generic namespace
+all the generic collections are atrongly typed
+means if you specify a datatype of the list you cannot insert another datatype in that collection
+you can only insert object of the same class
+
+lists grow in size at run time but array cannot
+list<data_type or class name> ls=new list<data_type or class name>(size)
+data type can be any predefined or the user defined
+
+example
+list<int> ls= new list<int>(3);
+list.add(1);
+list.add(2);
+list.add(3);
+list.add(4); //this will not give error for pushing more item than size because list grow in size at run time
+
+list are index based data structure soo excessing element becomes fast
+
+ls.count is a property that gives total no of elements
+
+ls.insert(index,object name);
+if we want to insert at some specific location
+ls.IndexOf(object name);
+to get the index of any object inserted in a list collection
+
+ls.contains(obj name) gives whether that obj is present or not
+its return type is boolean
+
+ls.Exists(condition)
+if we want to ckeck if there exists a obj with certain or specified pattern or condition given then we use exists method
+
+ls.find(condition or say lambda expression)
+it check for an element based on the specified lambda expression and returns first found element
+
+ls.findlast(lambda expression)
+finds nd returns last found item
+
+ls.findall(lambda expression)
+finds and returns all the matching items from the list
+ls.FindIndex(lambda expression,start,end) //start and end specifies  from where we want to start the search and where to stop
+return the first matching element index
+ls.FindLastIndex(lambda expression,start,end)
+returns index of last matched element
+
+how to convert array to list?
+
+use ToList() like
+list<type or class name> listName=arrayname.ToList();
+AddRange() allows us to insert a range of items at the end of the list
+GetRange(start,end) allows us to get a range of items from the list 
+InsertRangestart,listname)allows us to add a range of item to the list with a specified index
+
+RemoveRange(start,no of elements to remove) allows us to remove a range of items
+
+
+
 
 
 
